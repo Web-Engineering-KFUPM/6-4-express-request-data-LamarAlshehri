@@ -35,7 +35,6 @@ LAB SETUP INSTRUCTIONS
  *   HINT: 
  *     const app = express();
  *     app.listen(3000, ()=> console.log(...));
- * 
  *============================================
  * TODO-2 (/echo route):
  * ============================================
@@ -104,25 +103,12 @@ LAB SETUP INSTRUCTIONS
  *
  */
 
-//import express
+ // TODO-1
+ import express from "express";
 
+const app = express();
 
-// create express app instance to create web server
-
-
-
-// Query params: /echo?name=Ali&age=22
-
-
-// Route params: /profile/First/Last
-
-
-// Route param middleware example: /users/42
-
-
-// Route params: /users/:userId route
-
-
-// Start the server by listening
-
+app.listen(3000, () => {
+  console.log("API running at http://localhost:3000");
+});
 
